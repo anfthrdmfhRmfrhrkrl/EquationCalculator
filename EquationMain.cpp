@@ -6,14 +6,17 @@ void solveLinearEquation(double a, double b) {
     if (a == 0) {
         if (b == 0) {
             std::cout << "모든 x는 이 방정식을 만족합니다 (무한히 많은 해)." << std::endl;
+            system("pause");
         }
         else {
             std::cout << "이 방정식은 해가 없습니다." << std::endl;
+            system("pause");
         }
     }
     else {
         double x = -b / a;
         std::cout << "방정식의 해는 x = " << x << " 입니다." << std::endl;
+        system("pause");
     }
 }
 
@@ -28,13 +31,16 @@ void solveQuadraticEquation(double a, double b, double c) {
         double x1 = (-b + std::sqrt(discriminant)) / (2 * a);
         double x2 = (-b - std::sqrt(discriminant)) / (2 * a);
         std::cout << "방정식의 두 해는 x1 = " << x1 << ", x2 = " << x2 << " 입니다." << std::endl;
+        system("pause");
     }
     else if (discriminant == 0) {
         double x = -b / (2 * a);
         std::cout << "방정식의 해는 중근 x = " << x << " 입니다." << std::endl;
+        system("pause");
     }
     else {
         std::cout << "이 방정식은 실수 해가 없습니다." << std::endl;
+        system("pause");
     }
 }
 
@@ -66,6 +72,7 @@ int main() {
     }
     else {
         std::cout << "잘못된 선택입니다." << std::endl;
+        system("pause");
     }
 
     return 0;
